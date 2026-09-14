@@ -8,7 +8,7 @@ Se procesó un corpus de texto crudo de más de 47,000 registros. Como paso crí
 
 Adicionalmente, se aseguró una homogeneidad estadística absoluta entre los lotes de entrenamiento (*train*) y validación (*test*), paso esencial en entornos de *Supervised Fine-Tuning* (SFT) para asegurar robustez en producción.
 
-![Auditoría de Clases](images/auditoria_clases.jpg)
+![Auditoría de Clases](images/auditoria_clases.png)
 
 ## 3. Solución Técnica (NLP Pipeline)
 Se construyó un *pipeline* industrial y escalable:
@@ -16,7 +16,7 @@ Se construyó un *pipeline* industrial y escalable:
 *   **Modelado Predictivo:** Entrenamiento algorítmico optimizando la frontera de decisión para clasificar la polaridad de los textos operativos.
 *   **Impacto / Resultados:** El modelo superó el objetivo de negocio, alcanzando un **F1-Score de 0.8734** y un **ROC-AUC de 0.9455**, garantizando un equilibrio excelente entre Precisión y Recall para despliegue automatizado.
 
-![Métricas de Producción](images/metricas_modelo.jpg)
+![Métricas de Producción](images/metricas_modelo.png)
 
 ## 4. Stack Tecnológico
 *   **Lenguaje:** Python 3
