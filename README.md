@@ -23,3 +23,9 @@ Se construyó un *pipeline* industrial y escalable:
 *   **Procesamiento NLP:** spaCy, NLTK
 *   **Machine Learning:** Scikit-learn, Logistic Regression
 *   **Persistencia:** Joblib (Listos para integración API)
+
+### 💼 Business Impact & What I Would Do Next
+
+Business Impact: Erradica el procesamiento manual de textos en la operación diaria, ahorrando horas de trabajo administrativo y reduciendo la fricción en la ruta de decisiones operativas.
+
+Next Steps for Iteration: (1) Desplegar el modelo en un contenedor Docker con un endpoint (FastAPI) para que los sistemas ERP o CRM de la empresa puedan consumir la clasificación en tiempo real.
