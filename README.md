@@ -24,6 +24,33 @@ Se construyó un *pipeline* industrial y escalable:
 *   **Machine Learning:** Scikit-learn, Logistic Regression
 *   **Persistencia:** Joblib (Listos para integración API)
 
+### 🚀 API Endpoint Demo (Text Classification)
+
+Este microservicio permite a los sistemas de soporte B2B (Zendesk/Salesforce) clasificar tickets automáticamente enviando el texto en bruto vía JSON.
+
+**Sample Request (cURL):**
+```bash
+curl -X 'POST' \
+  'http://<API_URL>/classify_ticket' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "ticket_id": "TKT-8821",
+  "raw_text": "El sistema de facturación está duplicando los cobros de la licencia corporativa del mes pasado, necesitamos soporte urgente."
+}'
+```
+
+**Model Response (JSON):**
+```json
+{
+  "ticket_id": "TKT-8821",
+  "predicted_category": "Billing & Invoicing",
+  "confidence_score": 0.94,
+  "priority": "High",
+  "automated_action": "Route to Tier-2 Finance Support"
+}
+```
+
+
 ### 💼 Business Impact & What I Would Do Next
 
 Business Impact: Erradica el procesamiento manual de textos en la operación diaria, ahorrando horas de trabajo administrativo y reduciendo la fricción en la ruta de decisiones operativas.
